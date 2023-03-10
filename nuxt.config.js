@@ -1,3 +1,5 @@
+const api = 'http://127.0.0.1:8000/'
+// const api = 'http://217.78.239.164:10000/'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -39,7 +41,7 @@ export default {
   },
 
   proxy: {
-    '/api/': { target: 'http://217.78.239.164:10000'}
+    '/api/': { target: api}
   },
 
   server: {
